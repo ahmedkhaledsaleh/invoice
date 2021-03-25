@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from keenthemes.com/metronic/?page=docs&section=angular-overview by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Feb 2021 12:50:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5FS8GGP');</script>
+<!-- End Google Tag Manager -->
+	<meta charset="UTF-8">
+	<title>Metronic Documentation | Keenthemes</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<meta name="description" content="General documentation for developers about supported frameworks and used technologies"/>
+
+	<meta name="keywords" content="metronic, admin themes, bootstrap admin theme, keen, themes, keenthemes, bootstrap, sass, css, css3, laravel, dashboard, HTML, html5, vue, vuejs, angular,
+	react, javascript, datepicker, datatable, free admin themes, free templates, bootstrap admin, freebies, bootstrap themes, web design, web development, custom development, ASP.NET, premium themes"/>
+
+	<link rel="canonical" href="index8b91.html?page=docs&amp;section=angular-overview"/>
+	<meta property="og:locale" content="en_US"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Premium Bootstrap 4 HTML, Angular 11, VueJS, React & Laravel Admin Dashboard Themes"/>
+	<meta property="og:description" content="Metronic - #1 Selling Premium Bootstrap Admin Theme of All Time. Built with Twitter Bootstrap 4 HTML, Angular 11, VueJS, React and Laravel. Trusted By Tens of Thousands Users."/>
+	<meta property="og:url" content="https://keenthemes.com/metronic/?page=docs&section=angular-overview"/>
+	<meta property="og:site_name" content="Keenthemes"/>
+	<meta property="article:publisher" content="https://www.facebook.com/keenthemes"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:description" content="Metronic - #1 Selling Premium Bootstrap Admin Theme of All Time. Built with Twitter Bootstrap 4 HTML, Angular 11, VueJS, React and Laravel. Trusted By Tens of Thousands Users."/>
+	<meta name="twitter:title" content="Premium Bootstrap 4 HTML, Angular 11, VueJS, React & Laravel Admin Dashboard Themes"/>
+	<meta name="twitter:domain" content="Keenthemes"/>
+
+	<link rel="shortcut icon" href="assets/favicon.ico"/>
+
+	<link href="assets/style/flaticon15aa.css?v=7.2.2" rel="stylesheet" type="text/css"><link href="assets/plugins/tiny-slider/dist/tiny-slider15aa.css?v=7.2.2" rel="stylesheet" type="text/css"><link href="assets/style/style15aa.css?v=7.2.2" rel="stylesheet" type="text/css"><link href="assets/plugins/highlight.js/styles/railscasts.css" rel="stylesheet" type="text/css">	<script src="assets/plugins/jquery/dist/jquery.min15aa.js?v=7.2.2" type="application/javascript"></script><script src="assets/plugins/tether/dist/js/tether.min15aa.js?v=7.2.2" type="application/javascript"></script><script src="assets/plugins/popper.js/dist/umd/popper.min15aa.js?v=7.2.2" type="application/javascript"></script><script src="assets/plugins/bootstrap/dist/js/bootstrap.min15aa.js?v=7.2.2" type="application/javascript"></script><script src="assets/plugins/perfect-scrollbar/dist/perfect-scrollbar15aa.js?v=7.2.2" type="application/javascript"></script><script src="assets/plugins/tiny-slider/dist/tiny-slider15aa.js?v=7.2.2" type="application/javascript"></script><script src="assets/js/custom15aa.js?v=7.2.2" type="application/javascript"></script><script src="assets/plugins/highlight.js/lib/highlight.js" type="application/javascript"></script><script src="assets/plugins/highlight.js/build/highlight.pack.js" type="application/javascript"></script><script src="assets/js/docs.js" type="application/javascript"></script>	<!-- Hotjar Tracking Code for keenthemes.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1070954,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'../../static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/js9a31?id=UA-37564768-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-37564768-1');
+</script>
+	<link rel="stylesheet" href="../../fonts.googleapis.com/css6079.css?family=Poppins:300,400,500,600,700">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="../../www.googletagmanager.com/nsb3cb.html?id=GTM-5FS8GGP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrapper"><!-- wrapper -->
+
+	<!-- section -->
+<section class="section section--header" >
+	<!-- header -->
+	<header>
+		<div class="content">
+			<div class="header__handler">
+				<div class="sidebar">
+					<span class="hamburger">
+						<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 129 129" enable-background="new 0 0 129 129" width="40px" height="40px">
+							<g>
+								<path d="m91.4,33.5h-53.8c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h53.9c2.3,0 4.1-1.8 4.1-4.1-0.1-2.3-1.9-4.1-4.2-4.1z" fill="#FFFFFF"/>
+								<path d="m91.4,87.4h-53.8c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h53.9c2.3,0 4.1-1.8 4.1-4.1-0.1-2.3-1.9-4.1-4.2-4.1z" fill="#FFFFFF"/>
+								<path d="m91.4,60.4h-53.8c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h53.9c2.3,0 4.1-1.8 4.1-4.1-0.1-2.3-1.9-4.1-4.2-4.1z" fill="#FFFFFF"/>
+							</g>
+						</svg>
+					</span>
+                    <div class="sidebar__menu_wrap">
+                        <span class="sidebar__menu_close">x</span>
+                        <ul class="sidebar__menu"><li class="sidebar__menu__item"><a href="index708f.html?page=index" target="" title="Preview"><span>Preview</span></a></li><li class="sidebar__menu__item"><a href="indexfe9c.html?page=faq" target="" title="Faq"><span>Faq</span></a></li><li class="sidebar__menu__item active"><a href="indexfa01.html?page=docs" target="" title="Docs"><span>Docs</span></a></li><li class="sidebar__menu__item"><a href="indexc4e4.html?page=video" target="" title="Videos"><span>Videos</span></a></li><li class="sidebar__menu__item"><a href="indexc339.html?page=changelog" target="" title="Changelog"><span>Changelog</span></a></li><li class="sidebar__menu__item"><a href="index8f1d.html?page=github" target="" title="GitHub"><span>GitHub</span></a></li><li class="sidebar__menu__item"><a href="indexef23.html?page=reviews" target="" title="Reviews"><span>Reviews</span></a></li><li class="sidebar__menu__item"><a href="../tutorials/categories/metronic-admin.html" target="_blank" title="Tutorials"><span>Tutorials</span></a></li></ul>                    </div>
+				</div>
+				<a href="../index.html" class="kt_logo"><img src="assets/img/logo.png" alt="logo"></a>
+			</div>
+			<div class="header__references d-none d-md-block">
+				<a href="../index.html" class="header__references_home">Home</a>
+				<a href="index.html" class="header__references_theme">Metronic</a>
+				<a href="../hireus/index.html" class="header__references_hire" target="_blank">Hire Us</a>
+				<a href="../../themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469c356.html" class="header__references_purchase" target="_blank">Buy Now</a>
+			</div>
+		</div>
+	</header>
+	<!-- header END -->
+
+	<!-- content -->
+	<div class="content">
+		<!-- intro -->
+		<div class="intro">
+			<img src="assets/img/metronic_logo.svg" alt="logo">
+
+			<span class="intro__subtitle">
+				The World’s #1 Bootstrap 4 HTML, Angular 11, React, VueJS & Laravel<br/>Admin Dashboard Theme			</span>
+		</div>
+		<!-- intro END -->
+	</div>
+	<!-- content END -->
+</section>
+<!-- section END -->
+
+<!-- section -->
+<section class="section">
+	<!-- curved -->
+	<div class="curved-bg" style=" position: relative;margin-top: -55px;">
+		<svg  width="100%" height="56px" viewBox="0 0 100 100" version="1.1" preserveAspectRatio="none" class="">
+			<path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z" fill="white"/></path>
+		</svg>
+	</div>
+	<!-- curved -->
+
+	<!-- content -->
+	<div class="content">
+		<!-- main__menu_wrap -->
+		<div class="main-menu-wrap">
+			<div class="main-menu">
+                <a class="main-link" href="index708f.html?page=index" target="" title="Preview">Preview</a><a class="main-link" href="indexfe9c.html?page=faq" target="" title="Faq">Faq</a><a class="main-link active" href="indexfa01.html?page=docs" target="" title="Docs">Docs</a><a class="main-link" href="indexc4e4.html?page=video" target="" title="Videos">Videos</a><a class="main-link" href="indexc339.html?page=changelog" target="" title="Changelog">Changelog</a><a class="main-link" href="index8f1d.html?page=github" target="" title="GitHub">GitHub</a><a class="main-link" href="indexef23.html?page=reviews" target="" title="Reviews">Reviews</a><a class="main-link" href="../tutorials/categories/metronic-admin.html" target="_blank" title="Tutorials">Tutorials</a>			</div>
+		</div>
+		<!-- main__menu_wrap END -->
+	</div>
+	<!-- content END -->
+</section>
+<!-- section END -->
+
+	<div style="background: #F9F4EE;">
+    <section class="section section--white">
+	<!-- section -->
+	<div id="docs" class="content">
+
+		<div class="contents">
+			<!-- contents -->
+
+			<div class="doc-side-menu">
+				<p>&nbsp;</p>
+				<i class="la la-bars toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+				<div class="menu-list">
+					<div class="min-vh-100" id="sidebar"><ul class="nav flex-column flex-nowrap menu-content" id="menu-content"><li class="nav-item menu-separator"><h4>VERSIONS</h4></li><li class="nav-item"><a class="nav-link collapsed" href="#a602e58914aea4" data-toggle="collapse" data-target="#a602e58914aea4">HTML<div class="arrow"></div></a><div class="sub-menu collapse" id="a602e58914aea4" aria-expanded="false">
+                        <ul class="flex-column nav"><li class="nav-item"><a class="nav-link collapsed" href="#a602e58914aeb5" data-toggle="collapse" data-target="#a602e58914aeb5">Quick Start<div class="arrow"></div></a><div class="sub-menu collapse" id="a602e58914aeb5" aria-expanded="false">
+                        <ul class="flex-column nav"><li class="nav-item"><a class="nav-link" href="index7d67.html?page=docs&amp;section=html-quick-start">Gulp</a></li><li class="nav-item"><a class="nav-link" href="index8e92.html?page=docs&amp;section=html-webpack-quick-start">Webpack</a></li></ul></div></li><li class="nav-item"><a class="nav-link" href="index398d.html?page=docs&amp;section=html-demos">Multi-Demo</a></li><li class="nav-item"><a class="nav-link" href="indexfd28.html?page=docs&amp;section=html-files-structure">Files Structure</a></li><li class="nav-item"><a class="nav-link collapsed" href="#a602e58914aec1" data-toggle="collapse" data-target="#a602e58914aec1">Build Tools<div class="arrow"></div></a><div class="sub-menu collapse" id="a602e58914aec1" aria-expanded="false">
+                        <ul class="flex-column nav"><li class="nav-item"><a class="nav-link" href="index4144.html?page=docs&amp;section=html-build-tools">Gulp</a></li><li class="nav-item"><a class="nav-link" href="index0a58.html?page=docs&amp;section=html-webpack-build-tools">Webpack</a></li></ul></div></li><li class="nav-item"><a class="nav-link collapsed" href="#a602e58914aec6" data-toggle="collapse" data-target="#a602e58914aec6">Customization<div class="arrow"></div></a><div class="sub-menu collapse" id="a602e58914aec6" aria-expanded="false">
+                        <ul class="flex-column nav"><li class="nav-item"><a class="nav-link" href="indexe498.html?page=docs&amp;section=html-sass">SASS</a></li><li class="nav-item"><a class="nav-link" href="indexd03e.html?page=docs&amp;section=html-javascript">Javascript</a></li></ul></div></li><li class="nav-item"><a class="nav-link collapsed" href="#a602e58914aecb" data-toggle="collapse" data-target="#a602e58914aecb">Components<div class="arrow"></div></a><div class="sub-menu collapse" id="a602e58914aecb" aria-expanded="false">
+                        <ul class="flex-column nav"><li class="nav-item"><a class="nav-link" href="index589b.html?page=docs&amp;section=html-components-datatable">Datatable</a></li><li class="nav-item"><a class="nav-link" href="indexb95a.html?page=docs&amp;section=html-components-menu">Menu</a></li><li class="nav-item"><a class="nav-link" href="index9b22.html?page=docs&amp;section=html-components-header">Header</a></li><li class="nav-item"><a class="nav-link" href="indexfd3e.html?page=docs&amp;section=html-components-offcanvas">Offcanvas</a></li><li class="nav-item"><a class="nav-link" href="index9908.html?page=docs&amp;section=html-components-scrolltop">Scrolltop</a></li><li class="nav-item"><a class="nav-link" href="index0b9b.html?page=docs&amp;section=html-components-toggle">Toggle</a></li><li class="nav-item"><a class="nav-link" href="indexf8c6.html?page=docs&amp;section=html-components-wizard">Wizard</a></li><li class="nav-item"><a class="nav-link" href="index5154.html?page=docs&amp;section=html-components-dialog">Dialog</a></li><li class="nav-item"><a class="nav-link" href="index1e73.html?page=docs&amp;section=html-components-card">Card</a></li></ul></div></li><li class="nav-item"><a class="nav-link" href="index2682.html?page=docs&amp;section=html-rtl-version">RTL Version</a></li><li class="nav-item"><a class="nav-link" href="indexd065.html?page=docs&amp;section=html-layout-builder">Layout Builder</a></li></ul></div></li><li class="nav-item"><a class="nav-link collapsed" href="#a602e58914aee1" data-toggle="collapse" data-target="#a602e58914aee1">Angular<div class="arrow"></div></a><div class="sub-menu collapse show" id="a602e58914aee1" aria-expanded="false">
+                        <ul class="flex-column nav"><li class="nav-item active"><a class="nav-link" href="index8b91.html?page=docs&amp;section=angular-overview">Overview</a></li><li class="nav-item"><a class="nav-link" href="indexafd4.html?page=docs&amp;section=angular-installation">Installation</a></li><li class="nav-item"><a class="nav-link" href="indexcdac.html?page=docs&amp;section=angular-rtl">RTL</a></li><li class="nav-item"><a class="nav-link" href="indexe0af.html?page=docs&amp;section=angular-skeleton">Skeleton</a></li><li class="nav-item"><a class="nav-link" href="index0887.html?page=docs&amp;section=angular-i18n">Internationalization</a></li><li class="nav-item"><a class="nav-link" href="index562f.html?page=docs&amp;section=angular-mock-backend">Mock Backend</a></li><li class="nav-item"><a class="nav-link" href="indexb392.html?page=docs&amp;section=angular-how-create-custom-page">Create a Page</a></li><li class="nav-item"><a class="nav-link" href="index5558.html?page=docs&amp;section=angular-deployment">Deployment</a></li><li class="nav-item"><a class="nav-link" href="index2340.html?page=docs&amp;section=crud-tables">CRUD + Tables</a></li></ul></div></li><li class="nav-item"><a class="nav-link collapsed" href="#a602e58914aef3" data-toggle="collapse" data-target="#a602e58914aef3">React<div class="arrow"></div></a><div class="sub-menu collapse" id="a602e58914aef3" aria-expanded="false">
+                        <ul class="flex-column nav"><li class="nav-item"><a class="nav-link" href="index60e8.html?page=docs&amp;section=react-quick-start">Quick Start</a></li><li class="nav-item"><a class="nav-link" href="index8e22.html?page=docs&amp;section=react-overview">Overview</a></li><li class="nav-item"><a class="nav-link" href="indexe235.html?page=docs&amp;section=react-deployment">Deployment</a></li><li class="nav-item"><a class="nav-link" href="index0aba.html?page=docs&amp;section=react-internationalization">Internationalization (i18n)</a></li><li class="nav-item"><a class="nav-link" href="indexff1b.html?page=docs&amp;section=react-mock-back-end">Mock Back-end</a></li><li class="nav-item"><a class="nav-link" href="index5f92.html?page=docs&amp;section=react-create-a-page">Create a page</a></li><li class="nav-item"><a class="nav-link" href="indexa0a5.html?page=docs&amp;section=react-rtl">RTL</a></li><li class="nav-item"><a class="nav-link" href="indexcd51.html?page=docs&amp;section=react-typescript">TypeScript</a></li><li class="nav-item"><a class="nav-link" href="indexde0a.html?page=docs&amp;section=react-skeleton">Skeleton</a></li></ul></div></li><li class="nav-item"><a class="nav-link collapsed" href="#a602e58914af04" data-toggle="collapse" data-target="#a602e58914af04">Vue<div class="arrow"></div></a><div class="sub-menu collapse" id="a602e58914af04" aria-expanded="false">
+                        <ul class="flex-column nav"><li class="nav-item"><a class="nav-link" href="index2e1e.html?page=docs&amp;section=vue-quick-start">Quick Start</a></li><li class="nav-item"><a class="nav-link" href="index1227.html?page=docs&amp;section=vue-overview">Overview</a></li><li class="nav-item"><a class="nav-link" href="index3a9d.html?page=docs&amp;section=vue-rtl">RTL</a></li><li class="nav-item"><a class="nav-link" href="indexf8be.html?page=docs&amp;section=vue-i18n">Internationalization (i18n)</a></li><li class="nav-item"><a class="nav-link" href="index140a.html?page=docs&amp;section=vue-skeleton">Skeleton</a></li></ul></div></li><li class="nav-item"><a class="nav-link collapsed" href="#a602e58914af0f" data-toggle="collapse" data-target="#a602e58914af0f">Laravel<div class="arrow"></div></a><div class="sub-menu collapse" id="a602e58914af0f" aria-expanded="false">
+                        <ul class="flex-column nav"><li class="nav-item"><a class="nav-link" href="indexa2a8.html?page=docs&amp;section=laravel-quick-start">Quick Start</a></li><li class="nav-item"><a class="nav-link" href="indexe183.html?page=docs&amp;section=laravel-overview">Overview</a></li><li class="nav-item"><a class="nav-link" href="index9fb5.html?page=docs&amp;section=laravel-file-structure">File Structure</a></li><li class="nav-item"><a class="nav-link" href="indexc81c.html?page=docs&amp;section=laravel-config">Layout Config</a></li><li class="nav-item"><a class="nav-link" href="indexb9eb.html?page=docs&amp;section=laravel-menu-generator">Menu Generator</a></li><li class="nav-item"><a class="nav-link" href="index3967.html?page=docs&amp;section=vue-laravel-integration">Vue + Laravel Integration</a></li></ul></div></li><li class="nav-item menu-separator"><h4>GENERAL</h4></li><li class="nav-item"><a class="nav-link" href="index9d5a.html?page=docs&amp;section=github-access">GitHub Access</a></li><li class="nav-item"><a class="nav-link" href="index3a83.html?page=docs&amp;section=update">Updates</a></li><li class="nav-item"><a class="nav-link" href="index261d.html?page=docs&amp;section=api-reference">API Reference</a></li><li class="nav-item"><a class="nav-link" href="indexa116.html?page=docs&amp;section=net-integration">.NET Integration</a></li><li class="nav-item"><a class="nav-link" href="indexe486.html?page=docs&amp;section=more-resources">More Resources</a></li><li class="nav-item"><a class="nav-link" href="indexddce.html?page=docs&amp;section=references">References</a></li><li class="nav-item"><a class="nav-link" href="indexb167.html?page=docs&amp;section=security-notice">Security Notice</a></li></ul></div>				</div>
+			</div>
+
+			<div class="contents__box contents__box--right">
+				<!-- contents__box -->
+				
+<div class="section">
+  <h2 class="section-head">Angular</h2>
+
+  <h3 class="section-title">Overview</h3>
+  <div class="section-content">
+    <p>Angular is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets
+      you extend HTML's syntax to express your application's
+      components clearly. Angular's data binding
+      and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within
+      the browser.</p>
+    <p class="alert alert-info">The <code>html</code> version theme has static CSS only components. Those components are
+      by default available in the <code>angular</code> version as well. You can copy and paste the html and use it in
+      angular components.</p>
+  </div>
+
+  <div class="space"></div>
+
+  <h3 class="section-title">Angular with Full Demo Pages</h3>
+  <div class="section-content">
+    <p>Angular source code can be found in <code>[metronic]/theme/angular/</code> and available in separate app in
+      various demos.</p>
+    <div class="space"></div>
+    <table class="table-list">
+      <thead>
+        <tr>
+          <th class="force-border">Path</th>
+          <th class="force-border">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td nowrap style="padding-left: ;"><span class="file-node file-node-dot">theme</span></td><td>The Metronic theme pacakge.</td></tr><tr><td nowrap style="padding-left: 40px;"><span class="file-node file-node-dot">angular</span></td><td>The Angular's demo</td></tr><tr><td nowrap style="padding-left: 60px;"><span class="file-node file-node-dot">demo1</span></td><td>Full Metronic's Angular application with sample pages. See <a href="#angular-files-structure">Angular files structure</a> below.<br />
+		Demo URL <a href="https://preview.keenthemes.com/metronic/angular/demo1" target="_blank">See demo</a></td></tr><tr><td nowrap style="padding-left: 60px;"><span class="file-node file-node-dot">demo2</span></td><td>Full Metronic's Angular application with sample pages. See <a href="#angular-files-structure">Angular files structure</a> below.<br />
+		Demo URL <a href="https://preview.keenthemes.com/metronic/angular/demo2" target="_blank">See demo</a></td></tr><tr><td nowrap style="padding-left: 60px;"><span class="file-node file-node-dot">demo3</span></td><td>Full Metronic's Angular application with sample pages. See <a href="#angular-files-structure">Angular files structure</a> below.<br />
+		Demo URL <a href="https://preview.keenthemes.com/metronic/angular/demo3" target="_blank">See demo</a></td></tr>      </tbody>
+    </table>
+  </div>
+
+  <div class="space"></div>
+
+  <h3 id="angular-files-structure" class="section-title">Angular Files Structure</h3>
+  <div class="section-content">
+    Angular source code can be found in <code>[metronic]/theme/angular_new/[demo]/</code>.<br>
+    Below is the list of demo file structure in Angular app.
+    <div class="space"></div>
+    <table class="table-list">
+      <thead>
+        <tr>
+          <th class="force-border">Path</th>
+          <th class="force-border">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td nowrap style="padding-left: ;"><span class="file-node file-node-dot">dist</span></td><td>The build output of Angular. This folder does not included in the package. Run command <code>ng build</code> to build it.</td></tr><tr><td nowrap style="padding-left: ;"><span class="file-node file-node-dot">e2e</span></td><td>End-to-end tests using Protractor. Visit link <a href="https://angular.io/cli/e2e" target="_blank">https://angular.io/cli/e2e</a> for more info.</td></tr><tr><td nowrap style="padding-left: ;"><span class="file-node file-node-dot">node_modules</span></td><td>The <code>package.json</code> file in the app root defines what libraries will be installed into <code>node_modules/</code> when you run <code>npm install</code>.</td></tr><tr><td nowrap style="padding-left: ;"><span class="file-node file-node-dot">src</span></td><td>Your app lives in the src folder. All Angular components, templates, styles, images, and anything else your app needs go here. Any files outside of this folder are meant to support building your app.</td></tr><tr><td nowrap style="padding-left: 40px;"><span class="file-node file-node-dot">app</span></td><td>Main app folder</td></tr><tr><td nowrap style="padding-left: 60px;"><span class="file-node file-node-dot">_helpers</span></td><td>Addinional application helpers</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">fake</span></td><td>Fake database for Authorization mocking.</td></tr><tr><td nowrap style="padding-left: 60px;"><span class="file-node file-node-dot">_metronic</span></td><td>Metronic core logic</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">configs</span></td><td>Layout configs</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">core</span></td><td>Metronic custom Services/Pipes</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">partials</span></td><td>Shared components</td></tr><tr><td nowrap style="padding-left: 60px;"><span class="file-node file-node-dot">modules</span></td><td>Separated modules</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">auth</span></td><td>Authorization module</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">e-commerce</span></td><td>E-Commmerce module</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">errors</span></td><td>Error pages examples</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">i18n</span></td><td>Internationalization module</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">material</span></td><td>Google Material examples</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">ngBootstrap</span></td><td>NGBootstrap library compoments examples</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">user-management</span></td><td>User Moanagement modules (*not implemented in new version. ETA [v8.x.x])</td></tr><tr><td nowrap style="padding-left: 60px;"><span class="file-node file-node-dot">pages</span></td><td>Layout view and pages</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">_layout</span></td><td>Base Layouts</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">builder</span></td><td>Layout builder page</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">Dashboard</span></td><td>Dashboard page</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">layout.module.ts</span></td><td>Layout module</td></tr><tr><td nowrap style="padding-left: 80px;"><span class="file-node file-node-dot">pages-routing.module.ts</span></td><td>Routing for all private pages (based on Layout)</td></tr><tr><td nowrap style="padding-left: 60px;"><span class="file-node file-node-dot">app.component.html</span></td><td>Main app template.</td></tr><tr><td nowrap style="padding-left: 60px;"><span class="file-node file-node-dot">app.component.ts</span></td><td>Main app typescript.</td></tr><tr><td nowrap style="padding-left: 60px;"><span class="file-node file-node-dot">app.module.ts</span></td><td>Main app module. The place where to import and declare required components.</td></tr><tr><td nowrap style="padding-left: 60px;"><span class="file-node file-node-dot">app-routing.module.ts</span></td><td>Base routing for the app. Disable unused demo layout in this file to exclude the module.</td></tr><tr><td nowrap style="padding-left: 40px;"><span class="file-node file-node-dot">assets</span></td><td>This folder will contain all the Metronic core assets needed for the Angular application.</td></tr><tr><td nowrap style="padding-left: 40px;"><span class="file-node file-node-dot">environments</span></td><td>This folder contains one file for each of destination environments, each exporting simple configuration variables to use in application</td></tr><tr><td nowrap style="padding-left: 60px;"><span class="file-node file-node-dot">environment.prod.ts</span></td><td>Production environment config</td></tr><tr><td nowrap style="padding-left: 60px;"><span class="file-node file-node-dot">environment.ts</span></td><td>Development environment config</td></tr><tr><td nowrap style="padding-left: 40px;"><span class="file-node file-node-dot">index.html</span></td><td>The <code>index.html</code> lives at the root of front-end structure. The <code>index.html</code> file will primarily handle loading in all the libraries and Angular elements.</td></tr><tr><td nowrap style="padding-left: 40px;"><span class="file-node file-node-dot">main.ts</span></td><td>The main entry point for your app.</td></tr><tr><td nowrap style="padding-left: 40px;"><span class="file-node file-node-dot">polyfills.ts</span></td><td>Angular is built on the latest standards of the web platform. A particular browser may require at least one polyfill to run any Angular application. You may need additional polyfills for specific features.<br/>IE9, IE10 and IE11 requires to enable polyfills. Read more <a href="https://angular.io/guide/browser-support">angular.io/guide/browser-support</a></td></tr><tr><td nowrap style="padding-left: 40px;"><span class="file-node file-node-dot">style.angular.scss</span></td><td>Global styles go here which styles that affect all of your app need to be in a central place.</td></tr><tr><td nowrap style="padding-left: 40px;"><span class="file-node file-node-dot">test.ts</span></td><td>Visit link <a href="https://angular.io/guide/testing" target="_blank">https://angular.io/guide/testing</a> for more info.</td></tr><tr><td nowrap style="padding-left: 40px;"><span class="file-node file-node-dot">tsconfig.app.json</span></td><td>Visit link <a href="https://www.typescriptlang.org/docs/handbook/tsconfig-json.html" target="_blank">https://www.typescriptlang.org/docs/handbook/tsconfig-json.html</a> for more info.</td></tr><tr><td nowrap style="padding-left: 40px;"><span class="file-node file-node-dot">tsconfig.spec.json</span></td><td>Visit link <a href="https://www.typescriptlang.org/docs/handbook/tsconfig-json.html" target="_blank">https://www.typescriptlang.org/docs/handbook/tsconfig-json.html</a> for more info.</td></tr><tr><td nowrap style="padding-left: 40px;"><span class="file-node file-node-dot">tslint.json</span></td><td>When using the CLI or many third-party tools, a file named tslint.json or tslint.yaml is used to configure which rules get run and each of their options. Visit link <a href="https://palantir.github.io/tslint/usage/configuration/" target="_blank">https://palantir.github.io/tslint/usage/configuration/</a> for more info.</td></tr><tr><td nowrap style="padding-left: 40px;"><span class="file-node file-node-dot">typings.d.ts</span></td><td>Use TypeScript type definition files—d.ts files—to tell the compiler about the libraries you load. Visit link <a href="https://angular.io/guide/typescript-configuration#typescript-typings" target="_blank">https://angular.io/guide/typescript-configuration#typescript-typings</a> for more info.</td></tr><tr><td nowrap style="padding-left: ;"><span class="file-node file-node-dot">.editorconfig</span></td><td>Editor configuration, see http://editorconfig.org</td></tr><tr><td nowrap style="padding-left: ;"><span class="file-node file-node-dot">.gitignore</span></td><td>Git uses it to determine which files and directories to ignore, before you make a commit.</td></tr><tr><td nowrap style="padding-left: ;"><span class="file-node file-node-dot">angular.json</span></td><td>Configuration for Angular CLI. In this file you can set several defaults and also configure what files are included when your project is built. Check out the official documentation if you want to know more.</td></tr><tr><td nowrap style="padding-left: ;"><span class="file-node file-node-dot">package.json</span></td><td>A package.json file contains meta data about app or module. Most importantly, it includes the list of dependencies to install from npm when running npm install.</td></tr><tr><td nowrap style="padding-left: ;"><span class="file-node file-node-dot">package-lock.json</span></td><td>package-lock.json is automatically generated for any operations where npm modifies either the node_modules tree, or package.json</td></tr><tr><td nowrap style="padding-left: ;"><span class="file-node file-node-dot">tsconfig.json</span></td><td><code>tsconfig.json</code> file in a directory indicates that the directory is the root of a TypeScript project. The tsconfig.json file specifies the root files and the compiler options required to compile the project.</td></tr><tr><td nowrap style="padding-left: ;"><span class="file-node file-node-dot">tslint.json</span></td><td>Linting configuration for <a href="https://palantir.github.io/tslint/">TSLint</a> together with <a href="http://codelyzer.com/">Codelyzer</a>, used when running <code>ng lint</code>. Linting helps keep your code style consistent.</td></tr><tr><td nowrap style="padding-left: ;"><span class="file-node file-node-dot">webpack-rtl.config.js</span></td><td>RTL webpack configuration.</td></tr><tr><td nowrap style="padding-left: ;"><span class="file-node file-node-dot">ngcc.config.js</span></td><td>IVY renderer compatibility settings file.</td></tr>      </tbody>
+    </table>
+  </div>
+
+  <div class="space"></div>
+</div>			</div>
+			<!-- contents END -->
+
+		</div>
+	</div>
+</section><!-- section END -->
+</div>
+
+	
+<footer >
+    <div class="content-top">
+        <div class="container">
+            <div class="content-box">
+                <div class="d-flex flex-column text-center py-4">
+                    <span class="content-title mb-3">Need a Custom License?</span>
+                    <span class="content-desc">
+                        Learn more license options at<br/>
+                        <a href="mailto:support@keenthemes.com" class="footer-email" target="_blank">support@keenthemes.com</a>
+                    </span>
+                    <div class="mt-4 d-none">
+                        <a href="../hireus/index.html" target="_blank" class="btn btn-sm btn-danger pb-2 px-3">Get Quote</a>
+                    </div>
+                </div>
+
+                <div class="line d-flex justify-content-center align-items-center">
+                    <div></div>
+                </div>
+
+                <div class="d-flex flex-column text-center py-4">
+                    <span class="content-title mb-3">Need a Custom Work?</span>
+                    <span class="content-desc">
+                        Send us request if you need Metronic<br/>
+                        custom development
+                    </span>
+                    <div class="mt-4">
+                        <a href="../hireus/index.html" target="_blank" class="btn btn-sm btn-primary py-2 px-3">Hire Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-bottom w-100 d-flex align-items-center">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="footer-logo">
+                    <a class="kt_logo d-block" href="../index.html"><img src="assets/img/logo.png" alt="logo"></a>
+                </div>
+                <div class="d-flex align-items-center footer-references">
+                    <a href="indexfe9c.html?page=faq" class="mr-4">FAQ</a>
+                    <a href="../../themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469c356.html" target="_blank">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div><!-- wrapper END -->
+</body>
+
+<!-- Mirrored from keenthemes.com/metronic/?page=docs&section=angular-overview by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Feb 2021 12:50:43 GMT -->
+</html>
